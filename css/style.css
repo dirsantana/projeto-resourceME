@@ -7,15 +7,43 @@ html {
     scroll-behavior: smooth;
 }
 
+
 section {
     min-height: 100vh;
     padding: 100px 0;
 }
 
-.navbar-brand img {
-    width: 120px;
+header nav {
+    background-color:#616161;
 }
 
-#teste {
-    background-color: #303F9F;;
+.navbar-brand img {
+    width: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-inner {
+    height: 450px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.carousel-inner .carousel-item img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.carousel-inner .carousel-item img.nowhiring {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+    object-position: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 30%;
 }
