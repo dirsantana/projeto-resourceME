@@ -41,7 +41,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="img/Skooch-logo.png" class="img-fluid" alt="">
+                    <img src="img/true-agency.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col">
                     <h2>About</h2>
