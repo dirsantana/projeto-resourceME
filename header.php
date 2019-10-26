@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-                    <a class="navbar-brand" href="#">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="index.php">
                         <img src="img/ResourceMElogo.png" alt="ResourceME Logo"/>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,6 +28,14 @@
                         <li class="nav-item">
                           <a class="nav-link" href="#contact">Contact</a>
                         </li>
+                        <?php
+                          if(isset($_SESSION['logado'])) {
+                            echo "<li><a class='nav-link'>Bem vindo, usuario</a></li>";
+                            echo "<li><a class='nav-link' href='login.php?logout=true'>Sair</a></li>";
+                          } else {
+                            echo "<li><a class='nav-link' href='login.php'>Login</a></li>";
+                          }
+                        ?>
                       </ul>
                     </div>
                   </nav>
